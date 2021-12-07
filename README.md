@@ -1,1 +1,2 @@
-jenkinsci-lib
+# 
+Default shared lab for jenkins
