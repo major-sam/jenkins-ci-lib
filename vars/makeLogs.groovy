@@ -19,8 +19,8 @@ def call(String state){
                   encoding: 'UTF-8')
       )
       params.each {param ->
-             println " ${param.key.trim()} -> ${param.value.trim()} \n"
-             paramsList << " ${param.key.trim()} -> ${param.value.trim()} \n"
+             println " ${param.key.toString().trim()} -> ${param.value.toString().trim()} \n"
+             paramsList << " ${param.key.toString().trim()} -> ${param.value.toString().trim()} \n"
       }
       dir(logsFolder){
             dir(state){
