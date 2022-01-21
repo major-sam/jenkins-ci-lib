@@ -3,7 +3,7 @@ def call(String state){
       def date = new Date().format("[yyyy-MM-DD hh-mm-ss]")
       def buildFolderName = "${date.trim()}-${env.job_base_name}"
       def logsFolder = (isUnix() ? "/var/log/jenkins/buildlogs" : 'c:\\jenkinsLogs')
-      def updatesFile = (isUnix() ? 
+      updatesFile = (isUnix() ? 
             "${env.WORKSPACE}/${env.CONFIG_UPDATES}" :
             "${env.WORKSPACE}\\${env.CONFIG_UPDATES}" )
       List paramsList = []
