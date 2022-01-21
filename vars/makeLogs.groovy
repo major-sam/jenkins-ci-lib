@@ -18,9 +18,12 @@ def call(String state){
                   returnStdout: true, 
                   encoding: 'UTF-8')
       )
+      def delim = "=".multiply(30)
       params.each {param ->
              println " ${param.key.toString().trim()} -> ${param.value.toString().trim()} \n"
              paramsList << " ${param.key.toString().trim()} -> ${param.value.toString().trim()} \n"
+             paramsList << "${delim}\n"
+
       }
       dir(logsFolder){
             dir(state){
