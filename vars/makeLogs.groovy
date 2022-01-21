@@ -38,7 +38,7 @@ def call(String state){
                         
                         if (fileExists(updatesFile)){
                               writeFile(
-                                    file: updatesFile,
+                                    file: 'configUpdates.log',
                                     text: readFile(updatesFile),
                                     encoding: "UTF-8"
                               )
