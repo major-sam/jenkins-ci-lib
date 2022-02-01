@@ -22,7 +22,7 @@ def call(String state){
       params.each {param ->
              println " ${param.key.toString().trim()} -> ${param.value.toString().trim()} \n"
              paramsList << " ${param.key.toString().trim()} -> ${param.value.toString().trim()} \n"
-             paramsList << "${delim}\n"
+             paramsList << "${delim}"
 
       }
       dir(logsFolder){
